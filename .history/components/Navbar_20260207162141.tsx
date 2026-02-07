@@ -9,7 +9,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <span className="text-2xl font-bold text-orange-600">
-              Vandana <span className="text-gray-800">Airways</span>
+              Courier<span className="text-gray-800">Portfolio</span>
             </span>
           </div>
 

@@ -73,7 +73,7 @@ Quick Links</h4>
               <li>📞 +91-8383866968 | 8076668043</li>
               <li>✉️ akhileshpr125@gmail.com</li>
               <li>
-                📍 A - 44 A Mansa Ram Park, Uttam Nagar, New Delhi - 110059, India
+                📍 A-44 A Mansa Ram Park, Uttam Nagar, New Delhi - 110059, India
               </li>
             </ul>
           </div>

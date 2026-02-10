@@ -4,33 +4,33 @@ import Link from "next/link";
 export default function ServicesPage() {
   const services = [
     {
-      title: "India Post Mailing Services",
-      desc: "Specialized handling of Speed Post, Registered Post, and Parcel services with PAN India reach, economical pricing, and dependable delivery — including remote and rural locations.",
-      img: "/images/India Post.png",
-    },
-    {
       title: "Document Courier Services",
-      desc: "Secure and time-sensitive delivery of important documents such as agreements, legal papers, invoices, and confidential records — primarily coordinated via India Post.",
+      desc: "Secure and time-sensitive delivery of important documents such as agreements, legal papers, invoices, and confidential records.",
       img: "/images/Document.png",
     },
     {
       title: "Parcel & Bulk Shipments",
-      desc: "Cost-effective parcel and bulk shipment coordination using India Post and select private courier partners based on destination and urgency.",
+      desc: "Optimized shipping solutions for single parcels or bulk consignments, focusing on speed and cost-efficiency.",
       img: "/images/parcel.png",
     },
     {
+      title: "India Post Coordination",
+      desc: "Economical and wide-coverage deliveries coordinated through India Post, ideal for remote and semi-urban locations.",
+      img: "/images/India Post.png",
+    },
+    {
       title: "Local & Intercity Deliveries",
-      desc: "Reliable same-city and intercity deliveries with a strong focus on last-mile efficiency and predictable timelines.",
+      desc: "Reliable same-city and intercity deliveries with a strong focus on last-mile efficiency.",
       img: "/images/Intercity.png",
     },
     {
       title: "Business & Corporate Logistics",
-      desc: "Scalable courier coordination for enterprises, including routine dispatches, document circulation, and operational mailing requirements.",
+      desc: "Scalable logistics coordination for enterprises with transparent processes and dependable partners.",
       img: "/images/Parcel.png",
     },
     {
       title: "Multi-Courier Optimization",
-      desc: "When India Post timelines don’t meet urgency, we intelligently select trusted private courier partners for faster execution.",
+      desc: "Intelligent courier selection based on destination, urgency, and cost for optimal delivery performance.",
       img: "/images/multi.png",
     },
   ];
@@ -38,7 +38,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-12">
+      <section className="bg-gradient-to-b from-gray-50 to-white py-4">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-sm font-semibold text-orange-500 uppercase tracking-wide">
@@ -46,21 +46,21 @@ export default function ServicesPage() {
             </p>
 
             <h1 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-              India Post Mailing
-              <br /> & Courier Solutions You Can Rely On
+              Courier & Logistics Solutions
+              <br /> You Can Rely On
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 max-w-xl">
-              We specialize in India Post mailing services including Speed Post,
-              Registered Post, and PAN India document delivery — supported by
-              trusted private courier partners when faster service is required.
+              We provide end-to-end courier and logistics coordination by partnering
+              with trusted service providers to ensure timely, secure, and
+              cost-effective deliveries across India.
             </p>
           </div>
 
           <div className="flex justify-center">
             <Image
               src="/images/services.png"
-              alt="India Post and courier services"
+              alt="Courier services"
               width={320}
               height={220}
               className="object-contain"
@@ -71,8 +71,8 @@ export default function ServicesPage() {
       </section>
 
       {/* CORE SERVICES */}
-      <section className="bg-white py-6">
-        <div className="max-w-7xl mx-auto px-6 space-y-10">
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-6 space-y-12">
           {services.map((s, i) => {
             const imageLeft = i % 2 === 0;
 
@@ -94,8 +94,10 @@ export default function ServicesPage() {
                     height={190}
                     className="
                       object-contain
-                      transition-all duration-300 ease-out
-                      hover:scale-[1.04] hover:-translate-y-1
+                      transition-all
+                      duration-300
+                      hover:scale-[1.04]
+                      hover:-translate-y-1
                     "
                   />
                 </div>
@@ -131,10 +133,10 @@ export default function ServicesPage() {
 
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "PAN India Reach", icon: "📮", desc: "Delivery to every PIN code across India." },
-              { title: "Cost-Effective Mailing", icon: "💰", desc: "Economical India Post–based solutions." },
-              { title: "Smart Courier Selection", icon: "📦", desc: "Best option chosen per shipment." },
-              { title: "Secure Handling", icon: "🔒", desc: "Trusted partners and safe processes." },
+              { title: "Fast Delivery", icon: "🚚", desc: "Urgent timelines met efficiently." },
+              { title: "PAN India Coverage", icon: "📍", desc: "Remote to metro reach." },
+              { title: "Smart Selection", icon: "📦", desc: "Best courier per shipment." },
+              { title: "Secure Handling", icon: "🔒", desc: "Trusted partner network." },
             ].map((item, i) => (
               <div
                 key={i}
@@ -157,30 +159,17 @@ export default function ServicesPage() {
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-gray-900">
-            Why Choose Kamlesh Mailing?
+            Why Choose Our Services?
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Trusted by individuals and businesses for India Post mailing and
-            reliable courier coordination across India.
+            Trusted by individuals and businesses for reliable courier coordination across India.
           </p>
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
-              {
-                title: "India Post Specialists",
-                desc: "Deep expertise in Speed Post, Registered Post, and PAN India mailing.",
-                icon: "📮",
-              },
-              {
-                title: "Reliable Coordination",
-                desc: "Clear communication and dependable logistics execution.",
-                icon: "🤝",
-              },
-              {
-                title: "Flexible Courier Support",
-                desc: "Private couriers used only when speed is critical.",
-                icon: "🌐",
-              },
+              { title: "Cost-Effective", desc: "Competitive pricing through intelligent courier planning.", icon: "💰" },
+              { title: "Reliable Coordination", desc: "Clear communication and dependable logistics execution.", icon: "🤝" },
+              { title: "Trusted Network", desc: "Established courier partners across India.", icon: "🌐" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -194,9 +183,7 @@ export default function ServicesPage() {
                 <h3 className="font-semibold text-lg text-gray-900">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-gray-600 text-sm">
-                  {item.desc}
-                </p>
+                <p className="mt-2 text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -206,11 +193,10 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="bg-blue-50 py-20 text-center">
         <h2 className="text-3xl font-bold text-gray-900">
-          Need Help with India Post Mailing?
+          Need a Reliable Courier Partner Today?
         </h2>
         <p className="mt-4 text-gray-600">
-          Get expert assistance for Speed Post, Registered Post,
-          documents, and business dispatch requirements.
+          Get quick assistance for documents, parcels, and business logistics.
         </p>
         <Link
           href="/contact"
@@ -221,7 +207,7 @@ export default function ServicesPage() {
             transition-all
           "
         >
-          Enquire for India Post
+          Get in Touch
         </Link>
       </section>
     </>

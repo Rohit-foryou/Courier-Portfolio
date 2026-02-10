@@ -5,7 +5,7 @@ export default function CTASection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-r from-blue-50 to-white py-20">
       
-      {/* Background Illustration */}
+      {/* Background Illustration (subtle) */}
       <div className="absolute right-0 top-0 h-full w-1/3 opacity-20 hidden md:block pointer-events-none">
         <Image
           src="/images/courier-illustration.png"
@@ -28,23 +28,32 @@ export default function CTASection() {
 
         <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
           Get expert assistance for India Post mailing, document dispatch,
-          and PAN India deliveries — handled with care and reliability.
+          and PAN India deliveries — with private courier options available
+          when faster service is required.
         </p>
 
-        {/* SINGLE CTA */}
-        <Link
-          href="/contact"
-          className="
-            inline-block mt-8
-            bg-orange-500 text-white
-            px-10 py-4 rounded-md
-            text-base font-semibold
-            hover:bg-orange-600 hover:scale-[1.04]
-            transition-all shadow-lg
-          "
-        >
-          Enquire for India Post Mailing
-        </Link>
+        <div className="mt-8 flex justify-center gap-4 flex-wrap">
+          <Link
+            href="/contact"
+            className="
+              bg-orange-500 text-white px-8 py-3 rounded-md font-semibold
+              hover:bg-orange-600 hover:scale-[1.03]
+              transition-all shadow-md
+            "
+          >
+            Enquire for India Post
+          </Link>
+
+          <Link
+            href="/services"
+            className="
+              border border-blue-600 text-blue-600 px-8 py-3 rounded-md font-semibold
+              hover:bg-blue-50 transition
+            "
+          >
+            View All Services
+          </Link>
+        </div>
       </div>
     </section>
   );

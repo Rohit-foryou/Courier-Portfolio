@@ -7,11 +7,9 @@ export default function ContactPage() {
           <p className="text-sm font-semibold text-orange-500 uppercase tracking-wide">
             Contact Us
           </p>
-
           <h1 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900">
             Let’s Get Your Shipment Moving
           </h1>
-
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
             Have a query or need courier coordination? Reach out and we’ll assist
             you with the best possible solution.
@@ -19,7 +17,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* CONTACT SECTION */}
+      {/* CONTACT FORM */}
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
           
@@ -28,7 +26,6 @@ export default function ContactPage() {
             <h2 className="text-3xl font-bold text-gray-900">
               Get in Touch
             </h2>
-
             <p className="mt-4 text-gray-600 max-w-md">
               Whether it’s documents, parcels, or business logistics — we’re
               here to help you choose the right courier partner quickly and
@@ -40,40 +37,19 @@ export default function ContactPage() {
               <p>📞 <span className="font-medium">Phone:</span> +91 XXXXX XXXXX</p>
               <p>✉️ <span className="font-medium">Email:</span> info@yourcompany.com</p>
             </div>
-
-            <p className="mt-6 text-sm text-gray-500">
-              We usually respond within one business day.
-            </p>
           </div>
 
           {/* RIGHT FORM */}
           <div className="bg-gray-50 p-8 rounded-xl border">
             <form
-              action="https://formspree.io/f/mkovooen" // 🔴 REPLACE WITH YOUR REAL FORM ID
+              action="https://formspree.io/f/mkovooen"
               method="POST"
               className="space-y-5"
             >
-              {/* NAME */}
+              {/* EMAIL (required by Formspree) */}
               <div>
                 <label className="block text-sm font-medium text-gray-700">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  placeholder="Your name"
-                  className="
-                    mt-1 w-full rounded-md border-gray-300
-                    focus:border-orange-500 focus:ring-orange-500
-                  "
-                />
-              </div>
-
-              {/* EMAIL */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Email Address
+                  Your Email
                 </label>
                 <input
                   type="email"
@@ -90,7 +66,7 @@ export default function ContactPage() {
               {/* MESSAGE */}
               <div>
                 <label className="block text-sm font-medium text-gray-700">
-                  Message
+                  Your Message
                 </label>
                 <textarea
                   name="message"
@@ -111,7 +87,7 @@ export default function ContactPage() {
                 value="New Courier Enquiry"
               />
 
-              {/* IMPORTANT: REDIRECT (PREVENTS METHOD ERROR) */}
+              {/* REDIRECT (VERY IMPORTANT) */}
               <input
                 type="hidden"
                 name="_redirect"
@@ -132,14 +108,6 @@ export default function ContactPage() {
             </form>
           </div>
         </div>
-      </section>
-
-      {/* REASSURANCE */}
-      <section className="bg-blue-50 py-12 text-center">
-        <p className="text-lg font-medium text-gray-900">
-          Your information is safe with us. We only use it to assist with your
-          delivery needs.
-        </p>
       </section>
     </>
   );

@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand / About */}
           <div>
             <h3 className="text-xl font-bold text-blue-600">
-              Kamlesh<span className="text-gray-900">Mailing</span>
+              Vandana<span className="text-gray-900">Airways</span>
             </h3>
 
             <p className="mt-4 text-gray-600 text-sm leading-relaxed">
@@ -20,7 +20,7 @@ export default function Footer() {
             </p>
 
             <p className="mt-3 text-xs text-gray-500">
-              Authorized India Post Franchise • Trusted across Delhi NCR
+              Trusted for India Post mailing across Delhi NCR
             </p>
           </div>
 
@@ -74,7 +74,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-10 border-t border-gray-200 pt-6 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} Kamlesh Mailing. All rights reserved.
+          © {new Date().getFullYear()} Vandana Airways. All rights reserved.
         </div>
       </div>
     </footer>

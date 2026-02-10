@@ -9,7 +9,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <span className="text-2xl font-bold text-blue-600">
-              Kamlesh<span className="text-gray-800">Mailing</span>
+              Vandana<span className="text-gray-800">Airways</span>
             </span>
           </Link>
 

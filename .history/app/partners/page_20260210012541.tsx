@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PartnersPage() {
   const partners = [
-    { name: "India Post (Primary Partner)", logo: "/images/img8.png" },
+    { name: "India Post", logo: "/images/img8.png" },
     { name: "Private Courier Partners", logo: "/images/img9.png" },
     { name: "Regional Logistics Providers", logo: "/images/img10.png" },
     { name: "Last-Mile Delivery Networks", logo: "/images/img11.png" },
@@ -16,15 +16,12 @@ export default function PartnersPage() {
           <p className="text-sm font-semibold text-orange-500 uppercase tracking-wide">
             Our Partners
           </p>
-
           <h1 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900">
-            Built on India Post. Supported by Trusted Couriers.
+            Strong Network. Reliable Deliveries.
           </h1>
-
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Our delivery operations are primarily driven by India Post mailing
-            services, supported by a reliable network of private and regional
-            courier partners when faster or specialized delivery is required.
+            We collaborate with trusted courier and logistics partners to ensure
+            seamless, safe, and cost-effective deliveries across India.
           </p>
         </div>
       </section>
@@ -62,10 +59,9 @@ export default function PartnersPage() {
       {/* TRUST STRIP */}
       <section className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-lg font-medium text-gray-800 max-w-3xl mx-auto">
-            We specialize in India Post mailing for PAN India reach and
-            cost-effective document delivery, while coordinating private courier
-            networks only when delivery timelines demand faster execution.
+          <p className="text-lg font-medium text-gray-800">
+            Coordinating deliveries through a trusted mix of public and private
+            courier networks to serve individuals and businesses reliably.
           </p>
         </div>
       </section>

@@ -7,11 +7,9 @@ export default function ContactPage() {
           <p className="text-sm font-semibold text-orange-500 uppercase tracking-wide">
             Contact Us
           </p>
-
           <h1 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900">
             Let’s Get Your Shipment Moving
           </h1>
-
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
             Have a query or need courier coordination? Reach out and we’ll assist
             you with the best possible solution.
@@ -19,7 +17,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* CONTACT SECTION */}
+      {/* CONTACT CONTENT */}
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
           
@@ -49,11 +47,10 @@ export default function ContactPage() {
           {/* RIGHT FORM */}
           <div className="bg-gray-50 p-8 rounded-xl border">
             <form
-              action="https://formspree.io/f/mkovooen" // 🔴 REPLACE WITH YOUR REAL FORM ID
+              action="https://formspree.io/https://formspree.io/f/mkovooen/abcdwxyz"  // 🔴 REPLACE WITH YOUR ID
               method="POST"
               className="space-y-5"
             >
-              {/* NAME */}
               <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Full Name
@@ -70,7 +67,6 @@ export default function ContactPage() {
                 />
               </div>
 
-              {/* EMAIL */}
               <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Email Address
@@ -87,7 +83,6 @@ export default function ContactPage() {
                 />
               </div>
 
-              {/* MESSAGE */}
               <div>
                 <label className="block text-sm font-medium text-gray-700">
                   Message
@@ -104,21 +99,20 @@ export default function ContactPage() {
                 />
               </div>
 
-              {/* OPTIONAL SUBJECT */}
+              {/* OPTIONAL: SUBJECT LINE */}
               <input
                 type="hidden"
                 name="_subject"
                 value="New Courier Enquiry"
               />
 
-              {/* IMPORTANT: REDIRECT (PREVENTS METHOD ERROR) */}
+              {/* OPTIONAL: REDIRECT AFTER SUBMIT */}
               <input
                 type="hidden"
                 name="_redirect"
-                value="http://localhost:3000/thank-you"
+                value="/thank-you"
               />
 
-              {/* SUBMIT */}
               <button
                 type="submit"
                 className="

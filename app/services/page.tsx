@@ -6,28 +6,35 @@ export default function ServicesPage() {
   {
     title: "India Post Mailing Services",
     img: "/images/india-post.png",
+    desc: "Specialized handling of Speed Post, Registered Post, and Parcel services with PAN India reach.",
   },
   {
     title: "Document Courier Services",
     img: "/images/document.png",
+    desc: "Secure and time-sensitive delivery of legal, financial, and confidential documents.",
   },
   {
     title: "Parcel & Bulk Shipments",
     img: "/images/parcel.png",
+    desc: "Cost-effective parcel and bulk shipment coordination using India Post and trusted partners.",
   },
   {
     title: "Local & Intercity Deliveries",
     img: "/images/intercity.png",
+    desc: "Reliable same-city and intercity deliveries with predictable timelines.",
   },
   {
     title: "Business & Corporate Logistics",
     img: "/images/business.png",
+    desc: "Scalable courier coordination for enterprises and operational mailing needs.",
   },
   {
     title: "Multi-Courier Optimization",
     img: "/images/multi.png",
+    desc: "Private couriers intelligently selected when faster delivery is required.",
   },
 ];
+
 
   return (
     <>

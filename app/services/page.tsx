@@ -3,37 +3,31 @@ import Link from "next/link";
 
 export default function ServicesPage() {
   const services = [
-    {
-      title: "India Post Mailing Services",
-      desc: "Specialized handling of Speed Post, Registered Post, and Parcel services with PAN India reach, economical pricing, and dependable delivery — including remote and rural locations.",
-      img: "/images/India Post.png",
-    },
-    {
-      title: "Document Courier Services",
-      desc: "Secure and time-sensitive delivery of important documents such as agreements, legal papers, invoices, and confidential records — primarily coordinated via India Post.",
-      img: "/images/Document.png",
-    },
-    {
-      title: "Parcel & Bulk Shipments",
-      desc: "Cost-effective parcel and bulk shipment coordination using India Post and select private courier partners based on destination and urgency.",
-      img: "/images/parcel.png",
-    },
-    {
-      title: "Local & Intercity Deliveries",
-      desc: "Reliable same-city and intercity deliveries with a strong focus on last-mile efficiency and predictable timelines.",
-      img: "/images/Intercity.png",
-    },
-    {
-      title: "Business & Corporate Logistics",
-      desc: "Scalable courier coordination for enterprises, including routine dispatches, document circulation, and operational mailing requirements.",
-      img: "/images/Parcel.png",
-    },
-    {
-      title: "Multi-Courier Optimization",
-      desc: "When India Post timelines don’t meet urgency, we intelligently select trusted private courier partners for faster execution.",
-      img: "/images/multi.png",
-    },
-  ];
+  {
+    title: "India Post Mailing Services",
+    img: "/images/india-post.png",
+  },
+  {
+    title: "Document Courier Services",
+    img: "/images/document.png",
+  },
+  {
+    title: "Parcel & Bulk Shipments",
+    img: "/images/parcel.png",
+  },
+  {
+    title: "Local & Intercity Deliveries",
+    img: "/images/intercity.png",
+  },
+  {
+    title: "Business & Corporate Logistics",
+    img: "/images/business.png",
+  },
+  {
+    title: "Multi-Courier Optimization",
+    img: "/images/multi.png",
+  },
+];
 
   return (
     <>
